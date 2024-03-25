@@ -1,0 +1,130 @@
+@import 'fonts.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.cards {
+    background-color: gray;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+
+        &-title {
+            color: white;
+        }
+
+        &-button {
+            max-width: 400px;
+            width: 100%;
+            height: 20px;
+            border-radius: 15px;
+            padding: 15px;
+        }
+    }
+}
+
+.card__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px 50px;
+}
+
+.cards__item {
+    background-color: rgb(26, 18, 18);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.basket {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 170px;
+    height: 100px;
+    overflow:auto;
+    background-color: cadetblue;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 312px;
+        width: 100%;
+        padding: 24px;
+        border-radius: 28px;
+        background: linear-gradient(0deg, rgba(103, 80, 164, 0.11) 0%, rgba(103, 80, 164, 0.11) 100%), #FFFBFE;
+        &-title {
+            color: #1C1B1F;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px; 
+            margin-bottom: 30px;
+        }
+        &-button {
+           display: flex;
+           justify-content: center;
+           gap: 30px;
+        }
+    }}
+    
+    .button{
+       border-radius: 15px;
+        width: 80px;
+        height: 40px;
+    }
+    .green{
+        background-color: green;
+    }
+    .red{
+        background-color:red;
+    }
+    
+    
+    .load{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 400px;
+    }
